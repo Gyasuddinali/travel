@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-bold mb-6">
+                        <!--<span class="text-[#fc951a]">Biswas Manpower</span>Job<span class="text-[#fc951a]">Connect</span> -->
+                        <span class="text-[#6c74be]">Biswas Manpower</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner for  job placements across India and abroad.
+                    </p>
+                    <!--<div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[#fc951a] transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#fc951a] transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#fc951a] transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#fc951a] transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div> -->
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.php" class="text-gray-400 hover:text-[#6c74be] transition">Home</a></li>
+                        <li><a href="index.php#services" class="text-gray-400 hover:text-[#6c74be] transition">Jobs</a></li>
+                        <li><a href="index.php#about" class="text-gray-400 hover:text-[#6c74be] transition">About Us</a></li>
+                        <li><a href="index.php#ourTeam" class="text-gray-400 hover:text-[#6c74be] transition">Our Team</a></li>
+                        <li><a href="index.php#contact" class="text-gray-400 hover:text-[#6c74be] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Job Categories</h4>
+                    <ul class="space-y-3">
+                        <li><a href="jobc.php" target="_blank"  class="text-gray-400 hover:text-[#6c74be] transition">Group C - India</a></li>
+                        <li><a href="jobd.php" target="_blank"  class="text-gray-400 hover:text-[#6c74be] transition">Group D - India</a></li>
+                        <li><a href="jobc.php" target="_blank"  class="text-gray-400 hover:text-[#6c74be] transition">Group C - Abroad</a></li>
+                        <li><a href="jobd.php" target="_blank"  class="text-gray-400 hover:text-[#6c74be] transition">Group D - Abroad</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#6c74be] mt-1 mr-3"></i>
+                            <span>C-37 FIRST FLOOR GANESH NAGAR PANDAV NAGAR COMPLEX, Delhi-92</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-[#6c74be] mr-3"></i>
+                            <span> 9051700030 </span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[#6c74be] mr-3"></i>
+                            <span class="break-all text-xs">official.biswasmanpower@gmail.com</span>
+
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 Biswas Manpower Pvt Ltd. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-[#6c74be] transition">Privacy Policy</a>
+                    <!-- Terms of Service Link -->
+                        <a href="#" 
+                           class="text-gray-400 hover:text-[#6c74be] transition" 
+                           onclick="document.getElementById('termsModal').classList.remove('hidden')">
+                           Terms of Service
+                        </a>
+
+                                            <!-- Popup Modal -->
+                                            <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                                              <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
+                                                
+                                                <!-- Close Button -->
+                                                <button onclick="document.getElementById('termsModal').classList.add('hidden')" 
+                                                        class="absolute top-3 right-3 text-gray-500 hover:text-red-500">
+                                                  ✖
+                                                </button>
+                                                
+                                                <!-- Title -->
+                                                <h2 class="text-xl font-bold text-[#6c74be] mb-4">Terms of Service</h2>
+                                                
+                                                <!-- Content -->
+                                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                                  <li>Candidate should be mentally fit.</li>
+                                                  <li>Candidate should not have any disabilities .</li>
+                                                  <li>Candidate should not have any pending or ongoing illegal police cases.</li>
+                                                </ul>
+                                                
+                                                <!-- Close Footer Button -->
+                                                <div class="mt-6 text-right">
+                                                  <button onclick="document.getElementById('termsModal').classList.add('hidden')" 
+                                                          class="px-4 py-2 bg-[#6c74be] text-white rounded-lg hover:bg-[#565ea7]">
+                                                    Close
+                                                  </button>
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
