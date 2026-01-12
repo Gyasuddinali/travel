@@ -9,20 +9,23 @@
 </head>
 <body>
     <div class="container-fluid">
-    <h1 class="text-center text-danger" style="font-family: playfair;">Booking Form</h1>
-   <div class="container mt-5 pb-5 h-100">
-    <form class="form">
+   <div class="container   mt-5 pb-5 p-5 pt-1" >
+    <form class="form" id="reset">
+            <h1 class="text-center text-danger" style="font-family: playfair;">Booking Form</h1>
+
+            <p class="text-center">This is booking-form</p>
+
         <div class="col-12">
 <label class="form-label mb-0">Name</label>
 <input class="form-control" name="name" placeholder="Enter your name" type="text">
 </div>
 
-<!-- <div class="container mt-2 p-2">
-<label>Mobile</label>
-<input type="number">
+<div class="col-12 mt-2">
+<label class="form-label">Mobile</label>
+<input class="form-control" type="number" name="phone" placeholder="ex 919245536">
 </div>
 
-<div class="container mt-2 p-2">
+<!-- <div class="container mt-2 p-2">
     <label>Email</label>
     <input type="email">
 </div> -->
@@ -37,6 +40,26 @@
     <label class="form-label mb-0">To</label>
 <input class="form-control" type="text" name="to" placeholder="Where you want to go">
 </div>
+
+<div class="col-12 mt-4">
+<!-- <label class="form-label">Select Car</label> -->
+<select class="form-select">
+ <option selected>Select Car</option>
+
+    <option>Ertiga</option>
+    <option>Swift</option>
+</select>
+</div>
+   <div class="col-12 mt-2">
+        <label class="form-label mb-0">Date</label>
+        <input type="date" name="Checkin" class="form-control">
+      </div>
+<button class="btn bg-danger text-white mt-2" style="font-weight: bold;">Submit</button>
+
+<button class="btn bg-danger text-white mt-2`" type="button"  style="font-weight: bold;"
+onclick="document.getElementById('reset').reset();">
+Reset
+</button>
 
     </form>
     </div>

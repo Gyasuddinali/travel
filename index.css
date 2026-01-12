@@ -74,7 +74,6 @@ transition-duration: 1s;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-
   text-align: center;
   color: #ffffff;
   max-width: 700px;
@@ -86,6 +85,7 @@ transition-duration: 1s;
   font-size: 3.2rem;
   font-weight: 700;
   animation: fadeUp 1.2s ease;
+  color: black;
 }
 
 .hero-text p {

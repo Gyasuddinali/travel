@@ -15,22 +15,28 @@
 
 
 .mathura{
-    background-color: #f7c3c3;
+    /* background-color:#c8c3f7; */
     padding-bottom: 20px;
 }
 .card-body{
 background-color:transparent ;
 }
 
-
+#btn{
+  background-color: red;
+  color:white;
+  padding-left: 20px;
+padding-right: 20px;
+}
 
 #cardimg{
-  height: 200px;
+  height: 250px;
+  border-radius: 20px;
 }
 
   .carousel-item img {
-    width: 100px;
-    height: 800px; 
+    width: 100%;
+    height: 500px; 
     object-fit: cover; 
   }
 .indexh1{
@@ -40,7 +46,7 @@ padding-bottom: 20px;
 
 .fa-solid{
   color: rgb(226, 60, 60);
-  padding: 10px;
+  padding: 5px;
 }
 
 #h5title{
@@ -86,19 +92,53 @@ border-radius: 50px;
   width: 100%;
   height: 100%;
 }
+
+
+
+/* zoom effect trending */
+.zoom-card {
+  overflow: hidden;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  /* border-radius: 50px; */
+
+}
+
+.zoom-img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+
+
+.zoom-card:hover .zoom-img {
+  transform: scale(1.15);
+}
+
+
+
   
-/*for image effect*/
-.card-img-top:hover {
+/* .card-img-top:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transform:scale(1.05);
 transition-duration: 1s;
 
-  /* transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out; */
+} */
+.card-title{
+  text-align: center;
 }
 
-
-
+.card:hover{
+   transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform:scale(1.05);
+transition-duration: 1s;
+}
 
 /* .booking-form {
   position: fixed; 
@@ -155,7 +195,11 @@ transition-duration: 1s;
     margin: 15px auto 0 auto;
     padding: 15px;
   }
-
+.carousel-item img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover; 
+  }
   .booking-form .row.g-3 > div {
     flex: 0 0 100%;
     max-width: 100%;
@@ -214,7 +258,7 @@ transition-duration: 1s;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-
+background-color: #0000008e;
   text-align: center;
   color: #ffffff;
   max-width: 700px;
@@ -261,3 +305,59 @@ transition-duration: 1s;
     height: 380px;
   }
 }
+
+
+
+
+
+
+/* for traveler services */
+  .car-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .car-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .car-card img {
+    height: 230px;
+    object-fit: cover;
+    
+  }
+
+  .car-title {
+    font-family: "Playfair Display", serif;
+    color: #8b0000;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .car i {
+    color: #ff0000;
+    margin-right: 6px;
+  }
+
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    font-family:playfair;
+    color: #ff0000;
+  }
+
+  .book-btn {
+    background: linear-gradient(45deg, #8b0000, #d32f2f);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .book-btn:hover {
+    background: linear-gradient(45deg, #d32f2f, #8b0000);
+    color: #fff;
+  }
