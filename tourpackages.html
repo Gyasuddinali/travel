@@ -41,107 +41,182 @@
 
 
 <div class="container-fluid hero-section px-0">
-  <img src="https://i.ytimg.com/vi/nMryEGHMvTs/maxresdefault.jpg" alt="Mathura Travel">
+<div class="container mt-5">
+    <h2 class="text-center services-header mb-5">Mathura Nearby Tour</h2>
+    <div class="timeline">
 
-  <div class="hero-overlay"></div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h5>Day 1</h5>
+                <ul>
+                    <li>Dwarka Dheesh Mandir</li>
+                    <li>Vishram Ghat</li>
+                    <li>Gokul</li>
+                    <li>Sone Ka Palna</li>
+                    <li>Yog Maya Mandir</li>
+                    <li>Bal Janm Sthan</li>
+                    <li>Putna Vadh Sone ka Patra</li>
+                    <li>Raman Reti</li>
+                    <li>Chaurasi Khamba</li>
+                    <li>Brahmand Ghat</li>
+                    <li>Chinta Haran Mahadev</li>
 
-  <div class="hero-text">
-    <h1>Explore Mathura & Beyond</h1>
-    <p>Your trusted travel partner for spiritual & leisure journeys</p>
+                </ul>
+            </div>
+        </div>
 
-    <div class="hero-buttons">
-      <a href="#packages" class="btn btn-danger btn-lg me-3 text-white">View Packages</a>
-      <a href="#contact" class="btn btn-outline-light btn-lg text-black">Contact Us</a>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h5>Day 2</h5>
+                <ul>
+                    <li>Banke Bihari Mandir</li>
+                    <li>ISKCON Temple</li>
+                    <li>Prem Mandir</li>
+                    <li>Nidhivan</li>
+                    <li>Priya Kun</li>
+                    <li>Chandrodaya Mandir</li>
+                    <li>Char Dham Temple</li>
+                    <li>Kanch Ka Mandir</li>
+                    <li>Rang Nath Temple</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h5>Day 3</h5>
+                <ul>
+                    <li>Barsana</li>
+                    <li>kirti mandir</li>
+                    <li>Radha Rani Temple</li>
+                    <li>Nand Bhawan</li>
+                    <li>Govardhan</li>
+                    <li>Radha Kund</li>
+                    <li>Shyam Kund</li>
+                    <li>daan Ghat</li>
+                    <li>Mukharvind</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h5>Day 4</h5>
+                <ul>
+                    <li>Yamuna River Ghat</li>
+                    <li>Local Market Visit</li>
+                    <li>Evening Aarti</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Car Ren -->
+<div class="container mt-5">
+    <h2 class="text-center services-header">Car Rental Packages</h2>
+    <div class="row mt-4">
+        <div class="col-lg-4">
+            <div class="car-card text-center">
+                <h5>Swift Dzire</h5>
+                <p>Comfortable 5-seater car</p>
+                <p>Toll</p>
+                <p>Parking</p>
+                <p><strong>Package:</strong> ₹12 per km</p>
+                <button class="btn btn-warning book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Maruti Ertiga" data-rate="₹12 per km">Book Now</button>
+            </div>
+        </div>
+        <div class="col-lg-4">
+           <div class="car-card text-center">
+                <h5>Ertiga</h5>
+                <p>Comfortable 5-seater car</p>
+                <p>Toll</p>
+                <p>Parking</p>
+                <p><strong>Package:</strong> ₹12 per km</p>
+                <button class="btn btn-warning book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Maruti Ertiga" data-rate="₹12 per km">Book Now</button>
+            </div>
+        </div>
+        <div class="col-lg-4">
+           <div class="car-card text-center">
+                <h5>Innova Crysta</h5>
+                <p>Comfortable 5-seater car</p>
+                <p>Toll</p>
+                <p>Parking</p>
+                <p><strong>Package:</strong> ₹12 per km</p>
+                <button class="btn btn-warning book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Maruti Ertiga" data-rate="₹12 per km">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Book -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Your Car</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="bookingForm">
+          <div class="mb-3">
+            <label for="carName" class="form-label">Car</label>
+            <input type="text" class="form-control" id="carName" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="rate" class="form-label">Rate</label>
+            <input type="text" class="form-control" id="rate" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="contact" required>
+          </div>
+          <div class="mb-3">
+            <label for="km" class="form-label">Estimated Km</label>
+            <input type="number" class="form-control" id="km" required>
+          </div>
+          <div class="mb-3">
+            <label for="totalCost" class="form-label">Total Cost</label>
+            <input type="text" class="form-control" id="totalCost" readonly placeholder="₹0">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
 
+<!--details-->
+<div class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Your Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
 
-<div class="container my-5">
-  <h2 class="text-center text-danger section-title">
-    Popular Tour Packages
-  </h2>
+            <div class="modal-body">
+                <p><strong>Name:</strong> <span id="cName"></span></p>
+                <p><strong>Email:</strong> <span id="cEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="cPhone"></span></p>
+            </div>
 
-  <div class="row mt-4 g-4">
+            <div class="modal-footer">
+                <button class="btn btn-success" onclick="goToPayment()">
+                    Go to Payment
+                </button>
+            </div>
 
-    <!-- Package 1 -->
-    <div class="col-md-4">
-      <div class="package-card text-center">
-        <h4>Mathura – Vrindavan</h4>
-        <p class="text-muted">1 Day Spiritual Tour</p>
-        <h2 class="price">₹2,999</h2>
-        <ul>
-          <li>AC Cab</li>
-          <li>Temple Darshan</li>
-          <li>Driver Allowance</li>
-        </ul>
-        <button class="btn btn-danger">Book Now</button>
-      </div>
+        </div>
     </div>
-
-    <!-- Package 2 -->
-    <div class="col-md-4">
-      <div class="package-card highlight text-center">
-        <span class="badge">Best Seller</span>
-        <h4>Mathura – Govardhan</h4>
-        <p class="text-muted">2 Days Tour</p>
-        <h2 class="price">₹5,999</h2>
-        <ul>
-          <li>Hotel Included</li>
-          <li>AC Cab</li>
-          <li>Breakfast</li>
-        </ul>
-        <button class="btn btn-light">Book Now</button>
-      </div>
-    </div>
-
-    <!-- Package 3 -->
-    <div class="col-md-4">
-      <div class="package-card text-center">
-        <h4>Mathura – Agra</h4>
-        <p class="text-muted">Same Day Tour</p>
-        <h2 class="price">₹3,999</h2>
-        <ul>
-          <li>Taj Mahal Visit</li>
-          <li>AC Cab</li>
-          <li>Guide Support</li>
-        </ul>
-        <button class="btn btn-danger">Book Now</button>
-      </div>
-    </div>
-
-  </div>
 </div>
-
-
-<div class="container my-5">
-  <div class="row text-center g-4">
-
-    <div class="col-md-3">
-      <i class="fa-solid fa-car fa-2x text-danger"></i>
-      <h5 class="mt-2">Comfortable Cabs</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="fa-solid fa-shield-heart fa-2x text-danger"></i>
-      <h5 class="mt-2">Safe Travel</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="fa-solid fa-wallet fa-2x text-danger"></i>
-      <h5 class="mt-2">Affordable Prices</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="fa-solid fa-headset fa-2x text-danger"></i>
-      <h5 class="mt-2">24×7 Support</h5>
-    </div>
-
-  </div>
-</div>
-
-
 </div>
 </body>
 </html>
