@@ -12,17 +12,22 @@
 }
 
 .service-card {
-  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  /* background: linear-gradient(135deg, #f0f8ff, #e0f7fa); */
   border-radius: 20px;
   padding: 30px 20px;
+  height: 250px;
   transition: all 0.4s ease;
   text-align: center;
+  color: white;
+    transition: 1s ease-in-out;
+
 }
+
 
 .service-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-  background: linear-gradient(135deg, #56CCF2, #2F80ED);
+  /* background: linear-gradient(135deg,  #eb4030,  #a12115); */
   color: white;
 }
 
