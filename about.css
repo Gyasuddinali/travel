@@ -1,3 +1,24 @@
+
+
+
+.nav-link{
+  font-size: 20px !important;
+
+}
+.nav-link:hover{
+  font-weight: bolder;
+   transition: all 0.3s ease;
+transform: scale(1.03);
+  }
+  
+.contacth1{
+background-color: brown;
+/* border-left: solid 10px;
+border-right: solid 10px; */
+
+
+}
+
 .parent {
   position: relative; 
   /* width: 300px; */
@@ -17,3 +38,29 @@
 a{
     color: white;
 }
+
+@media (max-width: 576px) {
+  .card {
+height: 300px !important;  
+}
+.m1-div{
+  background-color: transparent !important;
+}
+.m-div{
+height: 360px !important;
+}
+.mobaboutres{
+height: 500px !important;
+}
+.mobres{
+  height: 300px !important;
+}
+
+.m-img{
+  height: 300px !important;
+}
+}
+
+
+
+

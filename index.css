@@ -7,6 +7,15 @@
   transform: scale(1.05);
 }
 
+.nav-link{
+  font-size: 20px !important;
+
+}
+.nav-link:hover{
+  font-weight: bolder;
+   transition: all 0.3s ease;
+transform: scale(1.03);
+  }
 
 .mathura{
     /* background-color:#c8c3f7; */
@@ -34,8 +43,8 @@ padding-right: 20px;
     object-fit: cover; 
   }
 .indexh1{
-  color: rgb(226, 60, 60);
-padding-bottom: 20px;
+  color:  brown;
+padding-bottom: 10px;
 }
 
 .fa-solid{
@@ -310,6 +319,9 @@ background-color: #0000008e;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
   }
+
+
+
 .pricing-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
@@ -323,12 +335,21 @@ background-color: #0000008e;
 .overlay-gradient1 {
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.849),
+    /* rgba(0, 0, 0, 0.849), */
     rgba(0, 0, 0, 0.616),
     transparent
   );
   border-radius: 18px;
 }
+
+  .titles1 {
+    font-family: "Playfair Display", serif;
+    /* color: #8b0000; */
+    color: white;
+    font-size: 22px;
+    border-bottom: 2px solid #ddd;
+    
+  }
 
 .price-badge {
   position: absolute;
@@ -392,3 +413,79 @@ background-color: #0000008e;
     background: linear-gradient(45deg, #d32f2f, #8b0000);
     color: #fff;
   }
+
+
+
+
+  /* slider foor card */
+* {
+  box-sizing: border-box;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial {
+  flex: 0 0 25%;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  color: #555;
+}
+
+@media (max-width: 992px) {
+  .testimonial {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial {
+    flex: 0 0 100%;
+  }
+}
+
+.navslid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: brown;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+

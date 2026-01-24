@@ -1,3 +1,13 @@
+.nav-link{
+  font-size: 20px !important;
+
+}
+.nav-link:hover{
+  font-weight: bolder;
+   transition: all 0.3s ease;
+transform: scale(1.03);
+  }
+
 .services-header {
   color: #FF6F61;
   margin-top: 50px;
@@ -12,6 +22,7 @@
 }
 
 .service-card {
+  background-color:  brown;
   /* background: linear-gradient(135deg, #f0f8ff, #e0f7fa); */
   border-radius: 20px;
   padding: 30px 20px;
@@ -51,11 +62,6 @@ h1,h5{
   font-family: playfair;
 }
 
-
-li:hover{
-   transition: all 0.3s ease;
-transform: scale(1.03);
-  }
 
 
 /* .icon-circle{

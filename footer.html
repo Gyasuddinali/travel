@@ -17,9 +17,9 @@
 </head>
 <body>
  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-     style="background-color: rgb(238, 238, 238);">
+     style="background-color: rgb(255, 255, 255);">
 
-    <div class="container" style="background-color: rgb(238, 238, 238);">
+    <div class="container" style="background-color: rgb(255, 255, 255);">
     <a class="navbar-brand d-flex pt-0 pb-0" href="index.html">
       <img class="pt-0 pb-0" src="Chhonkers_logo-removebg-preview.png" width="80px" style="height: 60px;" >
     </a>
@@ -28,14 +28,14 @@
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto" >
-        <li class="nav-item"><a class="nav-link" href="index.html" style="color: black; font-size: medium; font-family: playfair;">Home</a></li>
-       <li class="nav-item"><a class="nav-link" href="services.html" style="color: black; font-size: medium; font-family: playfair;">Service</a></li>
-        <li class="nav-item"><a class="nav-link" href="footer.html" style="color: black; font-size: medium; font-family: playfair;">Tour Package</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html" style="color: black; font-size: medium; font-family: playfair;">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" style="color: black; font-size: medium; font-family: playfair;">Contact</a></li>
-        <li class="nav-item"><a class="nav-link btn btn-danger text-white" href="booking.html" 
-          style="color: black; font-size: medium; font-family: playfair; border-radius: 10px;">Booking</a></li>
-
+        <li class="nav-item"><a class="nav-link" href="index.html" style="color: rgb(151, 16, 16); font-family: playfair;">Home</a></li>
+       <li class="nav-item"><a class="nav-link" href="services.html" style="color: rgb(156, 23, 23); font-family: playfair;">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="tourpackages.html" style="color: rgb(150, 25, 25); font-family: playfair;">Tour Package</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgb(146, 18, 18); font-family: playfair;">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(155, 24, 24); font-family: playfair;">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn text-white" href="booking.html" 
+          style="color: black; font-size: medium; font-family: playfair; border-radius: 10px;
+          background-color: rgb(151, 16, 16);">Booking</a></li>
     </ul>
     </div>
   </div>
@@ -1095,7 +1095,27 @@ Pin - 281001
 </footer>
 
 
+<script>
+     document.addEventListener('click', function (event) {
+    const navbar = document.getElementById('nav'); 
+    const toggler = document.querySelector('.navbar-toggler');
 
+    if (navbar.classList.contains('show') && 
+        !navbar.contains(event.target) && 
+        !toggler.contains(event.target)) {
+      new bootstrap.Collapse(navbar).hide(); 
+    }
+  });
+
+  document.querySelectorAll('#nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.getElementById('nav');
+      if (navbar.classList.contains('show')) {
+        new bootstrap.Collapse(navbar).hide();
+      }
+    });
+  });
+</script>
 
 
 </body>

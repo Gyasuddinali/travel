@@ -1,16 +1,12 @@
-/* .navbar {
-  position: fixed;       
-  top: 0;
-  left: 0;
-  width: 100%;           
-  background: #333;
-  padding: 15px 20px;
-  display: flex;
-  gap: 20px;
-  z-index: 999;         
-} */
+.nav-link{
+  font-size: 20px !important;
 
-
+}
+li:hover{
+  font-weight: bolder;
+   transition: all 0.3s ease;
+transform: scale(1.03);
+  }
 /* for traveler services */
   .car-card {
     border-radius: 20px;
@@ -69,29 +65,6 @@ img{
 
 }
 
-
- /* .container-fluid{
-    background-image: url("travel/trvel\ bg.png");
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
- background-attachment: scroll;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-} */
-
- /* .day1bg{
- background-image: url("banner/WhatsApp\ Image\ 2026-01-21\ at\ 1.07.07\ PM.jpeg");
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
- background-attachment: scroll;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}  */
 
 
 body{
