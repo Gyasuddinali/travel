@@ -44,7 +44,10 @@ a{
 height: 300px !important;  
 }
 .m1-div{
+  height: 200px !important;  
+
   background-color: transparent !important;
+   overflow: hidden;
 }
 .m-div{
 height: 360px !important;
@@ -58,6 +61,7 @@ height: 500px !important;
 
 .m-img{
   height: 300px !important;
+  width: 100%;
 }
 }
 

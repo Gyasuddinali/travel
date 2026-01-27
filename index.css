@@ -155,7 +155,8 @@ transition-duration: 1s;
 
 .booking-form{
     margin-top: 20px;
-    background: rgb(236, 78, 78);
+    background-color: #8b0000;
+    /* background: rgb(236, 78, 78); */
     padding: 20px;
     border-radius: 7px;
     width: 100%;
@@ -353,7 +354,7 @@ background-color: #0000008e;
 
 .price-badge {
   position: absolute;
-  background-color: red;
+  background-color: #8b0000;
   top: 15px;
   right: 15px;
   font-size: 1rem;
@@ -415,7 +416,9 @@ background-color: #0000008e;
   }
 
 
-
+#pay{
+  color: white;
+}
 
   /* slider foor card */
 * {

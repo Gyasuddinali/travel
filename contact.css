@@ -8,6 +8,14 @@
 transform: scale(1.03);
   }
 
+  /* form{
+    position:fixed;
+    background-repeat: no-repeat;
+    z-index: 5000;
+    background-image: url("images/contact\ us\ new\ \(1\).png");
+  } */
+
+
 .contacth1{
 background-color: brown;
 /* border-left: solid 10px;
@@ -34,9 +42,25 @@ margin-bottom: 10px;
 .col1{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    background-color: brown;
 }
 
 .col2{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+
+.btn1 {
+    background: linear-gradient(45deg, #fffefe, #fffefe);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .btn1:hover {
+    background: linear-gradient(45deg, #ffffff, #8b0000);
+    color: #ffffff;
+  }

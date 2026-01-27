@@ -1,14 +1,52 @@
-.float-btn {
+
+.float-icon {
     position: fixed;
-    bottom: 10%;
     right: 20px;
 
-
-    background-color: 0 4px 10px rgb(29, 161, 3);
+    width: 55px;
+    height: 55px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    z-index:1000;
+    color: #fff;
+    font-size: 26px;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 1000;
+
+    transition: all 0.3s ease;
+}
+
+.float-icon.whatsapp {
+    bottom: 20%;
+    background: #25D366;
+}
+
+.float-icon.whatsapp:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+}
+
+.float-icon.phone {
+    bottom: 10%;
+    background: #0066ff;
+}
+
+.float-icon.phone:hover {
+    background: #0066ff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .float-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        right: 15px;
+    }
 }
